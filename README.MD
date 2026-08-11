@@ -103,6 +103,8 @@ The *I2Connect: ICP-20100* module uses a default I2C address of:
 This address can be modified to 0x64 by adjusting the ADDR solder pad on the rear of the module PCB. If more than two pressure modules are required in the same system, an I2C multiplexer must be used.
 The PTSolns I2Connect: MUX module provides four independent I2C channels, allowing multiple identically-addressed modules to be connected to a single microcontroller.
 
+---
+
 ## *PTSolns IDE*
 
 The [*PTSolns IDE*](https://ptsolns.com/ide) is a free desktop application for programming PTSolns microcontroller development boards and compatible Arduino platforms.
