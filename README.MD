@@ -231,3 +231,21 @@ pressureSensor.configFilter(true);
 | 04_WatermarkInterrupt        | Configures the INT pin to signal when the FIFO reaches a specific fill level       |
 
 ---
+
+
+## Documentation & Resources
+
+Additional resources are available through the PTSolns Documentation Repository, including:
+
+* Datasheets
+* Schematics
+* Pinout diagrams
+* 3D models
+* Fritzing files
+* Tutorials
+* Example projects
+
+* [PTSolns Documentation Repository](https://docs.ptsolns.com)
+* [PTSolns Website](https://ptsolns.com)
+* [Contact Support](https://ptsolns.com/contact-us)
+* [PTSolns IDE](https://ptsolns.com/ide)
