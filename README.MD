@@ -50,7 +50,7 @@ The following modules are part of the *I2Connect* Series:
 * Programmable digital filtering, including Finite Impulse Response (FIR) for improved noise performance and Infinite Impulse Response (IIR) for filtering sudden pressure glitches.
 * Hardware `INT` pin configured for reliable active-low interrupt signaling to trigger custom host alerts.
 * Default I2C address of 0x63. Alternative address of 0x64 accessible via jumper pad.
-* **Onboard voltage regulator** ensuring safe 3.3V and 5V logic and power compatibility.
+* Onboard voltage regulator** ensuring safe 3.3V and 5V logic and power compatibility.
 * Dual Qwiic® compatible 4-pin JST SH connectors for daisy-chaining.
 * Breadboard-friendly 5-pin 2.54mm angled male header (GND, 3V3, SDA, SCL, INT).
 
