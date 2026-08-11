@@ -1,1 +1,10 @@
-
+PTSolns_I2Connect_ICP_20100	KEYWORD1
+begin	KEYWORD2
+readSensor	KEYWORD2
+setOperationMode	KEYWORD2
+configFilter	KEYWORD2
+flushFIFO	KEYWORD2
+getFIFOLevel	KEYWORD2
+configInterrupt	KEYWORD2
+setFIFOWatermark	KEYWORD2
+clearInterrupts	KEYWORD2
