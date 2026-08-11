@@ -137,3 +137,57 @@ Features of the [*PTSolns IDE*](https://ptsolns.com/ide) include:
 The [*PTSolns IDE*](https://ptsolns.com/ide) can be used alongside the Arduino IDE and supports many PTSolns development boards out of the box.
 
 ---
+
+## Quick Start
+```cpp
+#include <Wire.h>
+#include "PTSolns_I2Connect_ICP_20100.h"
+
+PTSolns_I2Connect_ICP_20100 pressureSensor;
+
+void setup()
+{
+    Serial.begin(115200);
+    Wire.begin();
+
+    // Initialize the sensor. The library automatically defaults to 0x63.
+    if (!pressureSensor.begin()) {
+        Serial.println("Failed to find ICP-20100 module.");
+        while (true); // Halt if sensor is not found
+    }
+
+    // Configure basic operating mode (e.g., Mode 0 for high accuracy continuous)
+    pressureSensor.setOperationMode(0);
+}
+
+void loop()
+{
+    float pressure, temperature;
+    
+    // Read the current pressure and temperature data
+    if (pressureSensor.readSensor(&pressure, &temperature)) {
+        Serial.print("Pressure: "); Serial.print(pressure, 2);
+        Serial.print(" kPa | Temp: "); Serial.print(temperature, 2);
+        Serial.println(" °C");
+    }
+    
+    delay(1000);
+}
+```
+
+---
+
+## Library Functions
+
+| Function          | Description                                    |
+| ----------------- | -----------------------------------------------|
+| begin(address)          | Initialize the I2C hardware and sensor configuration  |
+| readSensor()   | Polls and returns the latest pressure (kPa) and temp (°C) data  |
+| setOperationMode()        | Sets predefined operating modes balancing power vs. noise |
+| configFilter()           | Enables or configures the FIR/IIR digital filtering   |
+| readFIFO()   | Reads data directly from the 96-byte hardware buffer         |
+| flushFIFO()    | Empties the FIFO buffer                 |
+| configInterrupt()     | Sets up the hardware INT pin for watermark/threshold triggers        |
+
+
+---
