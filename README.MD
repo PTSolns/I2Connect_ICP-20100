@@ -12,7 +12,7 @@ Library for the PTSolns *I2Connect: ICP-20100* module. Available through both th
 
 The *I2Connect: ICP-20100* is a high-accuracy, low-power barometric pressure and temperature sensor solution. Designed as part of the I2Connect Series, this module utilizes a capacitive pressure sensor for monitoring pressure changes in the range of 30 to 110 kPa.
 
-The sensor integrates a DSP module for on-chip calibration, an Analog-to-Digital converter (ADC) delivering up to 20-bits of resolution, and programmable digital filtering[cite: 1]. It features a 96-byte FIFO buffer that enables the application to read up to 16 pressure-temperature pairs in a burst[cite: 1]. The module features an onboard voltage regulator, making it fully compatible with both 3.3V and 5V systems out of the box. This allows it to be used with a wide range of popular microcontroller platforms without the need for external level shifters or power step-downs.
+The sensor integrates a DSP module for on-chip calibration, an Analog-to-Digital converter (ADC) delivering up to 20-bits of resolution, and programmable digital filtering. It features a 96-byte FIFO buffer that enables the application to read up to 16 pressure-temperature pairs in a burst. The module features an onboard voltage regulator, making it fully compatible with both 3.3V and 5V systems out of the box. This allows it to be used with a wide range of popular microcontroller platforms without the need for external level shifters or power step-downs.
 
 Like all I2Connect modules, it connects using dual Qwiic® compatible connectors to easily integrate into existing I2C systems without soldering. The preinstalled right-angle header provides direct access to the I2C bus and the hardware interrupt (`INT`) pin for breadboard-based prototyping.
 
@@ -42,14 +42,14 @@ The following modules are part of the *I2Connect* Series:
 
 ## Key Features
 
-* High-accuracy capacitive barometric pressure and temperature sensor[cite: 1].
-* Functional pressure range of 30 to 110 kPa[cite: 1].
-* Operating temperature range of -40°C to 85°C[cite: 1].
-* Up to 20-bit output data resolution[cite: 1].
-* 96-byte FIFO buffer enabling the storage of up to 16 pressure-temperature measurement pairs[cite: 1].
-* Programmable digital filtering, including Finite Impulse Response (FIR) for improved noise performance and Infinite Impulse Response (IIR) for filtering sudden pressure glitches[cite: 1].
+* High-accuracy capacitive barometric pressure and temperature sensor.
+* Functional pressure range of 30 to 110 kPa.
+* Operating temperature range of -40°C to 85°C.
+* Up to 20-bit output data resolution.
+* 96-byte FIFO buffer enabling the storage of up to 16 pressure-temperature measurement pairs.
+* Programmable digital filtering, including Finite Impulse Response (FIR) for improved noise performance and Infinite Impulse Response (IIR) for filtering sudden pressure glitches.
 * Hardware `INT` pin configured for reliable active-low interrupt signaling to trigger custom host alerts.
-* Default I2C address of 0x63[cite: 1]. Alternative address of 0x64 accessible via jumper pad[cite: 1].
+* Default I2C address of 0x63. Alternative address of 0x64 accessible via jumper pad.
 * **Onboard voltage regulator** ensuring safe 3.3V and 5V logic and power compatibility.
 * Dual Qwiic® compatible 4-pin JST SH connectors for daisy-chaining.
 * Breadboard-friendly 5-pin 2.54mm angled male header (GND, 3V3, SDA, SCL, INT).
@@ -79,14 +79,14 @@ For maximum compatibility, the module also includes a preinstalled angled male h
 
 | Parameter               | Value                                      |
 | ----------------------- | ------------------------------------------ |
-| Sensor IC               | TDK InvenSense ICP-20100[cite: 1]         |
-| Pressure Range          | 30 to 110 kPa[cite: 1]                    |
-| Temperature Range       | -40°C to 85°C[cite: 1]                    |
-| Interface               | I2C, I3CSM, SPI[cite: 1]                  |
-| I2C Address             | 0x63 (Default) / 0x64 (Alt)[cite: 1]      |
+| Sensor IC               | TDK InvenSense ICP-20100                   |
+| Pressure Range          | 30 to 110 kPa                              |
+| Temperature Range       | -40°C to 85°C                              |
+| Interface               | I2C, I3CSM, SPI                            |
+| I2C Address             | 0x63 (Default) / 0x64 (Alt)                |
 | Operating Voltage       | 3.3 V / 5 V Rated (Onboard Regulator)      |
-| Communication Speed     | Up to 1 MHz (I2C)[cite: 1]                |
-| Resolutions             | Up to 20-bit[cite: 1]                     |
+| Communication Speed     | Up to 1 MHz (I2C)                          |
+| Resolutions             | Up to 20-bit                               |
 | Header Pinout           | INT, SCL, SDA, 3V3, GND                    |
 | Connectors              | 2x 4-pin 1mm JST SH                        |
 
