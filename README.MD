@@ -191,3 +191,43 @@ void loop()
 
 
 ---
+
+---
+
+## Basic Functions
+
+### Initialization
+```cpp
+// Initializes sensor at default address 0x63
+pressureSensor.begin();
+
+// Initializes sensor at alternative address 0x64
+pressureSensor.begin(0x64);
+
+```
+### Digital Filtering
+```cpp
+
+// Enable the IIR filter for smoother readings during environmental disturbances
+pressureSensor.configFilter(true);
+
+```
+---
+## Typical Applications
+
+* Home and Building Automation
+* Weather Stations
+* Wearable Sensors
+* Smartphones and Tablets
+---
+
+## Included Examples
+
+| Example                | Description                                          |
+| ---------------------- | ---------------------------------------------------- |
+| 01_BasicReadings          | Initialize the sensor and print continuous pressure and temperature data over serial           |
+| 02_FIFO_Burst       | Demonstrates fetching multiple pressure-temperature pairs rapidly using the FIFO  |
+| 03_AltitudeEstimate    | Calculates estimated altitude based on sea-level pressure references         |
+| 04_WatermarkInterrupt        | Configures the INT pin to signal when the FIFO reaches a specific fill level       |
+
+---
